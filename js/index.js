@@ -1,7 +1,7 @@
 $(function() {
 
     $("section:not(:first)").each(function() {
-        var colors = ["#227675", "#3d85ab", "#a993e3", "#aa4bde", "#927f85", "#326753", "#7fb68f", "#2e4145", "#83eede", "#b67bb8"];
+        var colors = ["#227675", "#3d85ab", "#aa4bde", "#326753", "#2e4145", "#b67bb8", "#bc252d"];
         var random_color = colors[Math.floor(Math.random() * colors.length)];
         $(this).css("background", random_color);
     });
