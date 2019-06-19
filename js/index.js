@@ -13,7 +13,7 @@ $(function() {
         mouseleave: function () {
             $(this).text($(this).parents("section").attr("id"));
         }
-    }, ".page-number"); //pass the element as an argument to .on
+    }, ".page-number");
 
     $("section").on("click", ".page-number", function() {
         var $current = $(this).parents("section");

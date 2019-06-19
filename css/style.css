@@ -1,7 +1,13 @@
+/* fullscreen stuff */
 html, body {
     height: 100%;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 body {
@@ -13,12 +19,13 @@ section {
     height: 100%;
     float: left;
     position: relative;
-    background: cadetblue;
+    text-align: center;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+/* regular styles */
+
+h1.display-4 {
+    font-weight: bold !important;
 }
 
 div.controls {
@@ -30,15 +37,16 @@ div.controls {
     text-align: center;
     vertical-align: middle;
 }
+
 div.page-number {
     font-family: 'Kaushan Script', cursive;
-    font-size: 4em;
+    font-size: 3em;
     bottom: 0;
-    height: 100px;
-    width: 100px;
-    margin-left: -50px;
-    line-height: 95px;
-    padding-right: 18px;
+    height: 75px;
+    width: 75px;
+    margin-left: -37.5px;
+    line-height: 70px;
+    padding-right: 12px;
 }
 
 div.up {
@@ -50,23 +58,26 @@ div.up {
 }
 
 .jumbotron {
-text-align: center;
-background-color: #ffffff75;
+    text-align: center;
+    background-color: #ffffff75;
 }
+
 .jumbotron h1 {
     font-family: 'Amatic SC', cursive;
 }
 
 .fa-arrow-down {
-    padding-left: 16px;
-    padding-top: 18px;
+    padding-left: 13px;
+    padding-top: 14px;
     cursor: pointer;
 }
 
-/* body { background:#227675}
+/*
+body { background:#227675}
 body { background:#3d85ab}
 body { background:#aa4bde}
 body { background:#326753}
 body { background:#2e4145}
 body { background:#b67bb8}
-body { background:#bc252d} */
+body { background:#bc252d} 
+*/
