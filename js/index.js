@@ -8,7 +8,7 @@ $(function() {
     });
 
     $("div.card").each(function() {
-        var colors = ["#5f5a35","#8eb5cd","#521036","#c34ed4","#701d31", "#a06839","#b6cc7d","#091f25","#624d83","#d3b6d6"];
+        var colors = ["#5f5a35","#8eb5cd","#521036","#43024d","#701d31", "#a06839","#091f25","#624d83","#0e301d"];
         var random_color = colors[Math.floor(Math.random() * colors.length)];
         $(this).css("background", random_color);
     });
