@@ -55,6 +55,7 @@ div.up {
     width: 30px;
     margin-left: -15px;
     line-height: 30px;
+    cursor: pointer;
 }
 
 .jumbotron {
@@ -70,6 +71,14 @@ div.up {
     padding-left: 13px;
     padding-top: 14px;
     cursor: pointer;
+}
+
+div.card-body {
+    min-height: 300px;
+}
+
+div.card-header {
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 /*

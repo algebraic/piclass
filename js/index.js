@@ -1,7 +1,14 @@
 $(function() {
 
     $("section:not(:first)").each(function() {
-        var colors = ["#227675", "#3d85ab", "#aa4bde", "#326753", "#2e4145", "#b67bb8", "#bc252d"];
+        var colors = ["#227675", "#3d85ab", "#aa4bde", "#326753", "#2e4145", "#b67bb8", "#bc252d", "#37b397","#6d807f","#87a1c1","#dddded","#af96d0", "#428238","#285e61","#234048","#666d91","#b279ad"];
+        // var colors = ["#000000"];
+        var random_color = colors[Math.floor(Math.random() * colors.length)];
+        $(this).css("background", random_color);
+    });
+
+    $("div.card").each(function() {
+        var colors = ["#5f5a35","#8eb5cd","#521036","#c34ed4","#701d31", "#a06839","#b6cc7d","#091f25","#624d83","#d3b6d6"];
         var random_color = colors[Math.floor(Math.random() * colors.length)];
         $(this).css("background", random_color);
     });
