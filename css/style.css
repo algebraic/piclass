@@ -1,4 +1,5 @@
 /* fullscreen stuff */
+
 html, body {
     height: 100%;
     overflow: scroll;
@@ -26,6 +27,7 @@ section {
 
 h1.display-4 {
     font-weight: bold !important;
+    font-size: 4rem;
 }
 
 div.controls {
@@ -49,6 +51,11 @@ div.page-number {
     padding-right: 12px;
 }
 
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
 div.up {
     top: 0;
     height: 30px;
@@ -60,11 +67,13 @@ div.up {
 
 .jumbotron {
     text-align: center;
-    background-color: #ffffff75;
+    background-color: #ffffff50;
+    padding: 3rem 2rem !important;
 }
 
 .jumbotron h1 {
     font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
 }
 
 .fa-arrow-down {
@@ -73,12 +82,41 @@ div.up {
     cursor: pointer;
 }
 
-div.card-body {
-    min-height: 300px;
+div.card {
+    background-color: #ffffff50;
 }
 
 div.card-header {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: #ffffff25;
+}
+
+div.card-body {
+    min-height: 575px;
+    background-color: #ffffff70;
+}
+
+.multi-card div.card-header {
+    background-color: #ffffff10;
+}
+
+.multi-card div.card-body {
+    min-height: 300px;
+    background-color: #ffffff20;
+}
+
+
+blockquote {
+    padding: 20px;
+    margin: 20px 20px;
+    border: 1px solid #eee;
+    border-left-color: #1b809e;
+    background: white;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-info {
+    /* border-left-color: #1b809e; */
 }
 
 /*
@@ -90,7 +128,6 @@ body { background:#2e4145}
 body { background:#b67bb8}
 body { background:#bc252d} 
 */
-
 
 /* body { background:#5f5a35}
 body { background:#8eb5cd}
