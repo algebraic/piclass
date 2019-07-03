@@ -11,6 +11,20 @@ $(function() {
         var getContent = getImport.import.querySelector("content");
         $this.html(document.importNode(getContent, true));
     });
+
+    // set carousel page icons
+    $("content").each(function() {
+        var $content = $(this);
+        var num = $(".carousel-item", $content).length;
+        for (n=0; n<num; n++) {
+            if (n == 0) {
+                addclass = "class='active'";
+            } else {
+                addclass = null;
+            }
+            $("ol.carousel-indicators", $content).append("<li data-target='#carouselParts' data-slide-to='" + n + "'" + addclass + "'></li>");
+        }
+    });
     
     // random bg colors
     $("section:not(:first)").each(function() {
@@ -56,7 +70,6 @@ $(function() {
 
     // paginate with arrows or page up/down
     $(window).keydown(function(e) {
-        // console.info("key=" + e.which);
         var num = parseInt(localStorage.getItem("page"));
         var newnum = num;
         var max = $("section:last").attr("id");
@@ -91,11 +104,11 @@ $(function() {
         // move to new section
         localStorage.setItem("page", newnum);
         var $next = $("#" + (newnum));
-        console.info("newnum = " + newnum);
         if (newnum != num) {
             $('html, body').stop().animate({scrollTop: $next[0].offsetTop}, 500, function() {
                 $(".carousel").carousel(0);
-                $("a.carousel-control-prev", $next).click().focus();
+                $("a.carousel-control-prev", $next).click();
+                $("a.carousel-control-next", $next).focus();
             });
         }
     });
