@@ -1,7 +1,7 @@
 $(function() {
 
     localStorage.setItem("page", 1);
-    // $("section#1").hide();
+    $("section#1").hide();
 
     // import section content
     $("section").each(function() {
