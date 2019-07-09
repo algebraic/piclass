@@ -1,7 +1,7 @@
 $(function() {
 
     localStorage.setItem("page", 1);
-    $("section#1").hide();
+    // $("section#1").hide();
 
     // import section content
     $("section").each(function() {
@@ -29,13 +29,13 @@ $(function() {
     // random bg colors
     $("section:not(:first)").each(function() {
         var colors = ["#227675", "#3d85ab", "#326753", "#2e4145", "#6d807f", "#87a1c1", "#428238", "#285e61", "#234048", "#666d91"];
-        var colors = ["#234048"];
+        // var colors = ["#234048"];
         var random_color = colors[Math.floor(Math.random() * colors.length)];
         $(this).css("background", random_color);
     });
     $(".multi-card div.card").each(function() {
         var colors = ["#5f5a35", "#8eb5cd", "#521036", "#43024d", "#701d31", "#a06839", "#091f25", "#624d83", "#0e301d"];
-        var colors = ["#000000"];
+        // var colors = ["#000000"];
         var random_color = colors[Math.floor(Math.random() * colors.length)];
         $(this).css("background", random_color);
     });
